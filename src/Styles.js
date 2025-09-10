@@ -5,6 +5,10 @@ import { FaReact } from 'react-icons/fa';
 export const CaixaPrincipal = styled.div`
   height: 100vh;
   width: 100vw;
+
+  @media (max-width: 768px) {
+    background-color: #242424;
+  }
 `;
 
 /* VÍDEO DE FUNDO */

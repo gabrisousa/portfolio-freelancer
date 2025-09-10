@@ -9,11 +9,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 768px) {
-    background-color: #242424;
-    
-  }
 }
 
 
