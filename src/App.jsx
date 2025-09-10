@@ -24,7 +24,7 @@ import {
   Projeto, FotoP1, Projeto1, CaixaVideo, TecnologiasP1, 
   TecnologiasP3, Contatos, Form, Footer, Logo2Img, CaixaContatos, 
   Serviços, ServiçosTitulo, ServiçosDescrição, ListaServiços,
-  Nome, Inicio, Descricao, Foto, FotoImg 
+  Nome, Inicio, Descricao, Foto, FotoImg, Hamburger 
 } from './Styles'
 
 // Ícones
@@ -53,6 +53,11 @@ function App() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [error, setError] = useState('')
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
 
   function onSubmit(e) {
     e.preventDefault();
@@ -84,22 +89,28 @@ function App() {
       <CaixaPrincipal>
         {/* HEADER */}
         <Header>
-          <ImagemLogo>
-            <LogoImg src={Logo} alt="Logo" />
-            <Nome>Sousa Dev</Nome>
-          </ImagemLogo>
+      <ImagemLogo>
+        <LogoImg src={Logo} alt="Logo" />
+        <Nome>Sousa Dev</Nome>
+      </ImagemLogo>
 
-          <Menu open={open}>
-            <LinkMenu href='#sobre'>SOBRE</LinkMenu>
-            <LinkMenu href='#projetos'>PROJETOS</LinkMenu>
-            <LinkMenu href='#servicos'>SERVIÇOS</LinkMenu>
-            <LinkMenu className='Contato' href='#contato'>
-              <button className='Contato'>Contato</button>
-            </LinkMenu>
-          </Menu>
+      {/* Botão Hamburger */}
+      <Hamburger onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Hamburger>
 
-          
-        </Header>
+      {/* Menu */}
+      <Menu open={open}>
+        <LinkMenu href="#sobre" onClick={() => setOpen(false)}>SOBRE</LinkMenu>
+        <LinkMenu href="#projetos" onClick={() => setOpen(false)}>PROJETOS</LinkMenu>
+        <LinkMenu href="#servicos" onClick={() => setOpen(false)}>SERVIÇOS</LinkMenu>
+        <LinkMenu href="#contato" onClick={() => setOpen(false)}>
+          <button>Contato</button>
+        </LinkMenu>
+      </Menu>
+    </Header>
 
         {/* INÍCIO */}
         <Inicio>

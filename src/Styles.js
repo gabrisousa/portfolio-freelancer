@@ -32,7 +32,7 @@ export const Header = styled.div`
   padding: 0 20px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    justify-content: space-between;
     height: auto;
     padding: 10px;
   }
@@ -74,16 +74,52 @@ export const Menu = styled.div`
   gap: 30px;
   padding-right: 70px;
 
-  button {
-    border: none;
-    background-color: #61DBFB;
-  }
+  
+
+  
 
   @media (max-width: 768px) {
     justify-content: center;
     padding-right: 0;
     flex-wrap: wrap;
     gap: 15px;
+    position: fixed;
+    top: 70px; /* abaixo do header */
+    right: ${({ open }) => (open ? "0" : "-100%")};
+    background-color: #363535ff;
+    flex-direction: column;
+    width: 200px;
+    height: calc(100vh - 70px);
+    padding-top: 20px;
+    transition: right 0.3s ease;
+    border-left: 1px solid #61DBFB;
+    z-index: 1;
+
+  }
+
+
+  button {
+    border: none;
+    background-color: #61DBFB;
+    cursor: pointer;
+  }
+`;
+
+
+export const Hamburger = styled.div`
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: #61DBFB;
+    margin: 5px 0;
+    transition: all 0.3s ease;
   }
 `;
 
