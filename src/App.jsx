@@ -193,9 +193,9 @@ function App() {
       <Projeto1>
         <img src={FotoProjeto1} alt="Projeto 1" className="FotoP1" />
         <div className="overlay1">
-          <h2>Portfolio</h2>
+          <h2>Max Sales</h2>
           <p>Meu site pessoal desenvolvido em React com styled-components.</p>
-          <a href="https://seu-link-projeto1.com" target="_blank" rel="noreferrer">
+          <a href="https://salesmax.com.br/" target="_blank" rel="noreferrer">
             Ver Projeto
           </a>
           {/* <TecnologiasP1>
@@ -211,9 +211,9 @@ function App() {
       <Projeto1>
         <img src={FotoProjeto2} alt="Projeto 2" className="FotoP1" />
         <div className="overlay1">
-          <h2>Landing Page</h2>
+          <h2>Irmãos Mario</h2>
           <p>Página institucional com animações e design moderno.</p>
-          <a href="https://seu-link-projeto2.com" target="_blank" rel="noreferrer">
+          <a href="https://irmaos-mario-e-luigi.netlify.app/" target="_blank" rel="noreferrer">
             Ver Projeto
           </a>
           {/* <TecnologiasP1>
@@ -228,9 +228,9 @@ function App() {
       <Projeto1>
         <img src={FotoProjeto3} alt="Projeto 3" className="FotoP1" />
         <div className="overlay1">
-          <h2>App To-Do</h2>
+          <h2>Lista de Tarefas</h2>
           <p>Aplicativo de lista de tarefas com React Hooks e LocalStorage.</p>
-          <a href="https://seu-link-projeto3.com" target="_blank" rel="noreferrer">
+          <a href="https://lista-de-tarefas-sousadev.netlify.app/" target="_blank" rel="noreferrer">
             Ver Projeto
           </a>
           {/* <TecnologiasP3>
