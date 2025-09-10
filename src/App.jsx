@@ -189,7 +189,7 @@ function App() {
         <Projetos id="projetos">
       <h1>Meus Projetos</h1>
 
-      Projeto 1
+      {/* Projeto 1 */}
       <Projeto1>
         <img src={FotoProjeto1} alt="Projeto 1" className="FotoP1" />
         <div className="overlay1">
@@ -207,7 +207,7 @@ function App() {
         </div>
       </Projeto1>
 
-      Projeto 2
+      {/* Projeto 2 */}
       <Projeto1>
         <img src={FotoProjeto2} alt="Projeto 2" className="FotoP1" />
         <div className="overlay1">
@@ -224,7 +224,7 @@ function App() {
         </div>
       </Projeto1>
 
-      Projeto 3
+      {/* Projeto 3 */}
       <Projeto1>
         <img src={FotoProjeto3} alt="Projeto 3" className="FotoP1" />
         <div className="overlay1">

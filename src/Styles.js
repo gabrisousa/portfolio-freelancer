@@ -5,10 +5,6 @@ import { FaReact } from 'react-icons/fa';
 export const CaixaPrincipal = styled.div`
   height: 100vh;
   width: 100vw;
-
-  @media (max-width: 768px) {
-    background-color: #242424;
-  }
 `;
 
 /* VÍDEO DE FUNDO */
@@ -234,6 +230,7 @@ export const Sobre = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
+    background-color: #242424;
     height: auto;
     padding: 40px 20px;
   }
@@ -290,6 +287,7 @@ export const Serviços = styled.div`
   flex-direction: column;
   padding: 20px;
   text-align: center;
+  background-color: #242424;
 `;
 
 export const ServiçosTitulo = styled.h1``;
@@ -341,6 +339,7 @@ export const Projetos = styled.div`
   @media (max-width: 768px) {
     padding: 20px;
     gap: 30px;
+    background-color: #242424;
   }
 `;
 
