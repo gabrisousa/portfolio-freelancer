@@ -8,6 +8,10 @@ import { FaReact} from 'react-icons/fa';
 export const CaixaPrincipal = styled.div`
   height: 100vh;
   width: 100vw;
+
+  @media query (max-width: 768px) {
+    
+  }
   
 `;
 
@@ -127,6 +131,14 @@ display: flex;
 height: 100vh;
 padding: 90px;
 
+
+@media (max-width: 768px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+
   
 `;
 
@@ -144,9 +156,16 @@ span {
 }
 
 
+
+  
+
+
 `;
 
 export const Foto = styled.div`
+
+
+
 
 
   
