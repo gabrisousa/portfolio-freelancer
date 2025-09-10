@@ -186,7 +186,7 @@ function App() {
           </Serviços>
         </motion.div>
 
-        {/* <Projetos id="projetos">
+        <Projetos id="projetos">
       <h1>Meus Projetos</h1>
 
       Projeto 1
@@ -198,12 +198,12 @@ function App() {
           <a href="https://seu-link-projeto1.com" target="_blank" rel="noreferrer">
             Ver Projeto
           </a>
-          <TecnologiasP1>
+          {/* <TecnologiasP1>
             <img src={IconReact} alt="React" />
             <img src={IconJs} alt="JavaScript" />
             <img src={IconHtml} alt="HTML" />
             <img src={IconCss} alt="CSS" />
-          </TecnologiasP1>
+          </TecnologiasP1> */}
         </div>
       </Projeto1>
 
@@ -216,11 +216,11 @@ function App() {
           <a href="https://seu-link-projeto2.com" target="_blank" rel="noreferrer">
             Ver Projeto
           </a>
-          <TecnologiasP1>
+          {/* <TecnologiasP1>
             <img src={IconHtml} alt="HTML" />
             <img src={IconCss} alt="CSS" />
             <img src={IconJs} alt="JavaScript" />
-          </TecnologiasP1>
+          </TecnologiasP1> */}
         </div>
       </Projeto1>
 
@@ -233,13 +233,13 @@ function App() {
           <a href="https://seu-link-projeto3.com" target="_blank" rel="noreferrer">
             Ver Projeto
           </a>
-          <TecnologiasP3>
+          {/* <TecnologiasP3>
             <img src={IconReact} alt="React" />
             <img src={IconJs} alt="JavaScript" />
-          </TecnologiasP3>
+          </TecnologiasP3> */}
         </div>
       </Projeto1>
-    </Projetos> */}
+    </Projetos>
 
         {/* CONTATO */}
         <motion.div variants={variants2} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }}>
