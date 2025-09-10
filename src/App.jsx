@@ -11,6 +11,10 @@ import FotoProjeto2 from './assets/Imagem-Projeto2.png'
 import FotoProjeto3 from './assets/Imagem-Projeto3.png'
 import FotoProjeto4 from './assets/Imagem-Projeto4.png'
 import VideoFundo from './assets/videoFundo.mp4'
+// import IconReact from "./assets/react.png";
+// import IconJs from "./assets/javascript.png";
+// import IconHtml from "./assets/html.png";
+// import IconCss from "./assets/css.png";
 
 // Styled Components
 import { 
@@ -171,8 +175,60 @@ function App() {
           </Serviços>
         </motion.div>
 
-        {/* PROJETOS */}
-        {/* (mantive tudo igual ao seu código original) */}
+        {/* <Projetos id="projetos">
+      <h1>Meus Projetos</h1>
+
+      Projeto 1
+      <Projeto1>
+        <img src={FotoProjeto1} alt="Projeto 1" className="FotoP1" />
+        <div className="overlay1">
+          <h2>Portfolio</h2>
+          <p>Meu site pessoal desenvolvido em React com styled-components.</p>
+          <a href="https://seu-link-projeto1.com" target="_blank" rel="noreferrer">
+            Ver Projeto
+          </a>
+          <TecnologiasP1>
+            <img src={IconReact} alt="React" />
+            <img src={IconJs} alt="JavaScript" />
+            <img src={IconHtml} alt="HTML" />
+            <img src={IconCss} alt="CSS" />
+          </TecnologiasP1>
+        </div>
+      </Projeto1>
+
+      Projeto 2
+      <Projeto1>
+        <img src={FotoProjeto2} alt="Projeto 2" className="FotoP1" />
+        <div className="overlay1">
+          <h2>Landing Page</h2>
+          <p>Página institucional com animações e design moderno.</p>
+          <a href="https://seu-link-projeto2.com" target="_blank" rel="noreferrer">
+            Ver Projeto
+          </a>
+          <TecnologiasP1>
+            <img src={IconHtml} alt="HTML" />
+            <img src={IconCss} alt="CSS" />
+            <img src={IconJs} alt="JavaScript" />
+          </TecnologiasP1>
+        </div>
+      </Projeto1>
+
+      Projeto 3
+      <Projeto1>
+        <img src={FotoProjeto3} alt="Projeto 3" className="FotoP1" />
+        <div className="overlay1">
+          <h2>App To-Do</h2>
+          <p>Aplicativo de lista de tarefas com React Hooks e LocalStorage.</p>
+          <a href="https://seu-link-projeto3.com" target="_blank" rel="noreferrer">
+            Ver Projeto
+          </a>
+          <TecnologiasP3>
+            <img src={IconReact} alt="React" />
+            <img src={IconJs} alt="JavaScript" />
+          </TecnologiasP3>
+        </div>
+      </Projeto1>
+    </Projetos> */}
 
         {/* CONTATO */}
         <motion.div variants={variants2} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }}>
