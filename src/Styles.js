@@ -390,6 +390,9 @@ padding: 30px;
  @media (max-width: 768px) {
     padding: 20px;
     gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
