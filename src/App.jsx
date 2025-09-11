@@ -24,7 +24,7 @@ import {
   Projeto, FotoP1, Projeto1, CaixaVideo, TecnologiasP1, 
   TecnologiasP3, Contatos, Form, Footer, Logo2Img, CaixaContatos, 
   Serviços, ServiçosTitulo, ServiçosDescrição, ListaServiços,
-  Nome, Inicio, Descricao, Foto, FotoImg, Hamburger 
+  Nome, Inicio, Descricao, Foto, FotoImg,  
 } from './Styles'
 
 // Ícones
@@ -33,6 +33,7 @@ import { FaReact, FaLinkedin, FaGithub, FaWhatsapp, FaBars } from 'react-icons/f
 // Componentes extras
 import { IconCloud } from '../iconClould'
 import ScrollToTopButton from "./ScrollToTopButton";
+import { Hamburger } from 'lucide-react';
 
 // Animações
 const variants = {
@@ -94,12 +95,6 @@ function App() {
         <Nome>Sousa Dev</Nome>
       </ImagemLogo>
 
-      {/* Botão Hamburger */}
-      <Hamburger onClick={toggleMenu}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </Hamburger>
 
       {/* Menu */}
       <Menu open={open}>
@@ -186,60 +181,139 @@ function App() {
           </Serviços>
         </motion.div>
 
-        <Projetos id="projetos">
-      <h1>Meus Projetos</h1>
-
-      {/* Projeto 1 */}
-      <Projeto1>
-        <img src={FotoProjeto1} alt="Projeto 1" className="FotoP1" />
-        <div className="overlay1">
-          <h2>Max Sales</h2>
-          <p>Meu site pessoal desenvolvido em React com styled-components.</p>
-          <a href="https://salesmax.com.br/" target="_blank" rel="noreferrer">
-            Ver Projeto
-          </a>
-          {/* <TecnologiasP1>
-            <img src={IconReact} alt="React" />
-            <img src={IconJs} alt="JavaScript" />
-            <img src={IconHtml} alt="HTML" />
-            <img src={IconCss} alt="CSS" />
-          </TecnologiasP1> */}
+        <Projetos id='projetos'>
+  <h1 className='Titulo-Projetos'>Projetos</h1>
+  <Projeto>
+    <motion.div 
+      variants={variants2} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <div>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto1} alt="Projeto 1"/>
+          <div className='overlay1'>
+            <h3>Max Sales</h3>
+            <a href="https://salesmax.com.br/" target="_blank">Ver site</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>MAX SALES - Adquira já seu plano com<br /> benefícios digitais exclusivos.</h1>
+          <p>
+            O Max Sales é uma plataforma digital que oferece planos de benefícios<br />
+            exclusivos em entretenimento, saúde e bem-estar.<br />
+            O projeto foi desenvolvido com foco em responsividade, performance<br />
+            e experiência do usuário, integrando diversas marcas parceiras em um só lugar.
+          </p>
+          <TecnologiasP1>
+            <img src="https://img.icons8.com/?size=256&id=13664&format=png"/>
+          </TecnologiasP1>
         </div>
-      </Projeto1>
+      </div>
+    </motion.div>
 
-      {/* Projeto 2 */}
-      <Projeto1>
-        <img src={FotoProjeto2} alt="Projeto 2" className="FotoP1" />
-        <div className="overlay1">
-          <h2>Irmãos Mario</h2>
-          <p>Página institucional com animações e design moderno.</p>
-          <a href="https://irmaos-mario-e-luigi.netlify.app/" target="_blank" rel="noreferrer">
-            Ver Projeto
-          </a>
-          {/* <TecnologiasP1>
-            <img src={IconHtml} alt="HTML" />
-            <img src={IconCss} alt="CSS" />
-            <img src={IconJs} alt="JavaScript" />
-          </TecnologiasP1> */}
+    <motion.div 
+      variants={variants} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <div>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto2} alt="Projeto 2"/>
+          <div className='overlay1'>
+            <h3>Lista de Tarefas</h3>
+            <a href="https://github.com/gabrisousa/Lista-de-tarefas" target="_blank">Github</a>
+            <a href="https://lista-de-tarefas-sousadev.netlify.app/" target="_blank">Ver site</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>Lista de Tarefas</h1>
+          {/* <p>
+            Este projeto é uma aplicação simples e funcional de lista de tarefas, desenvolvida<br />
+            com foco em praticar conceitos fundamentais de React. O usuário pode<br />
+            adicionar novas tarefas através do campo de input e gerenciá-las de forma dinâmica.<br />
+            O design é minimalista, com destaque para a usabilidade e clareza, utilizando um fundo<br />
+            em gradiente escuro que contrasta com a área principal de interação. O botão de adicionar tarefas<br />
+            tem um estilo chamativo em roxo para dar mais ênfase à ação principal da aplicação.
+          </p> */}
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
         </div>
-      </Projeto1>
+      </div>
+    </motion.div>
 
-      {/* Projeto 3 */}
-      <Projeto1>
-        <img src={FotoProjeto3} alt="Projeto 3" className="FotoP1" />
-        <div className="overlay1">
-          <h2>Lista de Tarefas</h2>
-          <p>Aplicativo de lista de tarefas com React Hooks e LocalStorage.</p>
-          <a href="https://lista-de-tarefas-sousadev.netlify.app/" target="_blank" rel="noreferrer">
-            Ver Projeto
-          </a>
-          {/* <TecnologiasP3>
-            <img src={IconReact} alt="React" />
-            <img src={IconJs} alt="JavaScript" />
-          </TecnologiasP3> */}
+    <motion.div 
+      variants={variants2} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <div>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto3} alt="Projeto 3"/>
+          <div className='overlay1'>
+            <h3>Irmãos Mario e Luigi</h3>
+            <a href="https://github.com/gabrisousa/Mario-Bros" target="_blank">Github</a>
+            <a href="https://irmaos-mario-e-luigi.netlify.app/" target="_blank">Ver site</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>Irmãos Mario e Luigi - Heróis do Enccanamento!</h1>
+          {/* <p>
+            Quando o problema é vazamento, cano entupido ou torneira pingando, quem você,<br />
+            vai chamar? Mario e Luigi! Com experiência única e muito bom humor, os irmãos mais<br />
+            famosos do Reino dos Cogumelos estão prontos para resolver qualquer<br />
+            emergência de encanamento com agilidade, confiança e um toque especial de diversão.
+          </p> */}
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
         </div>
-      </Projeto1>
-    </Projetos>
+      </div>
+    </motion.div>
+
+    <motion.div 
+      variants={variants} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <div>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto4} alt="Projeto 4"/>
+          <div className='overlay1'>
+            <h3>Irmãos Mario e Luigi</h3>
+            <a href="https://github.com/gabrisousa/Mario-Bros" target="_blank">Github</a>
+            <a href="https://irmaos-mario-e-luigi.netlify.app/" target="_blank">Ver site</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>Atletas no Brasil!</h1>
+          {/* <p>
+            Atletas no Brasil é uma aplicação web desenvolvida para facilitar a pesquisa<br />
+            de atletas brasileiros que competiram nas Olimpíadas de 2024. Na interface,<br />
+            o usuário pode digitar o nome do atleta ou do esporte e, em seguida,<br />
+            clicar no botão de Pesquisar para visualizar os resultados.
+          </p> */}
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
+        </div>
+      </div>
+    </motion.div>
+  </Projeto>
+</Projetos>
+
 
         {/* CONTATO */}
         <motion.div variants={variants2} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }}>
