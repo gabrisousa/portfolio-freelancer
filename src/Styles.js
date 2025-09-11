@@ -383,8 +383,8 @@ padding: 30px;
 
 
 export const Projeto1 = styled.div`
-position: relative;
-display: flex;
+  position: relative;
+  display: flex;
   width: 300px;
   height: 200px;
   border-radius: 12px;
@@ -430,9 +430,13 @@ display: flex;
     text-decoration: underline;
   }
 
-   @media (max-width: 480px) {
+  @media (max-width: 780px) {
     width: 250px;
     height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 
   
@@ -533,7 +537,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   img {
 
 
