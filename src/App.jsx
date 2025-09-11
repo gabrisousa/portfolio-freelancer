@@ -230,14 +230,14 @@ function App() {
         </Projeto1>
         <div className='Descrição'>
           <h1>Lista de Tarefas</h1>
-          {/* <p>
+          <p>
             Este projeto é uma aplicação simples e funcional de lista de tarefas, desenvolvida<br />
             com foco em praticar conceitos fundamentais de React. O usuário pode<br />
             adicionar novas tarefas através do campo de input e gerenciá-las de forma dinâmica.<br />
             O design é minimalista, com destaque para a usabilidade e clareza, utilizando um fundo<br />
             em gradiente escuro que contrasta com a área principal de interação. O botão de adicionar tarefas<br />
             tem um estilo chamativo em roxo para dar mais ênfase à ação principal da aplicação.
-          </p> */}
+          </p>
           <TecnologiasP3>
             <img src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
@@ -265,12 +265,12 @@ function App() {
         </Projeto1>
         <div className='Descrição'>
           <h1>Irmãos Mario e Luigi - Heróis do Enccanamento!</h1>
-          {/* <p>
+          <p>
             Quando o problema é vazamento, cano entupido ou torneira pingando, quem você,<br />
             vai chamar? Mario e Luigi! Com experiência única e muito bom humor, os irmãos mais<br />
             famosos do Reino dos Cogumelos estão prontos para resolver qualquer<br />
             emergência de encanamento com agilidade, confiança e um toque especial de diversão.
-          </p> */}
+          </p>
           <TecnologiasP3>
             <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>

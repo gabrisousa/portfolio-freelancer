@@ -307,10 +307,23 @@ margin-top: 100px;
 flex-direction: column;
 
 
+@media (max-width: 480px) {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+  }
+
+
 `;
 
 
 export const ServiçosTitulo = styled.h1`
+
+
 
 `;
 
@@ -482,22 +495,32 @@ gap: 100px;
 
     div {
       text-align: center;
-    display: flex;
-    flex-direction: column;
+    
+    
 
 
     }
 
+    .Descrição {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+
+
+
 
 
     .Descrição h1 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     margin-top: 30px;
 }
 
     .Descrição p {
-     font-size: 10px;
+     font-size: 15px;
      text-align: center;
      margin-top: 30px;
 }
@@ -505,7 +528,7 @@ gap: 100px;
     
     
     
-  }
+}
 
 
   
@@ -559,6 +582,19 @@ gap: 5px;
 
 img {
   height: 35px;
+}
+
+
+@media (max-width: 768px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 35px;
+    width: 35px;
+    display: flex;
+  }
 }
 
 `;
