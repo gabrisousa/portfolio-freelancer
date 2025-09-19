@@ -297,12 +297,12 @@ function App() {
         </Projeto1>
         <div className='Descrição'>
           <h1>Atletas no Brasil!</h1>
-          {/* <p>
+          <p>
             Atletas no Brasil é uma aplicação web desenvolvida para facilitar a pesquisa<br />
             de atletas brasileiros que competiram nas Olimpíadas de 2024. Na interface,<br />
             o usuário pode digitar o nome do atleta ou do esporte e, em seguida,<br />
             clicar no botão de Pesquisar para visualizar os resultados.
-          </p> */}
+          </p>
           <TecnologiasP3>
             <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>

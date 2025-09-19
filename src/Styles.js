@@ -393,6 +393,7 @@ padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 650px;
   }
 `;
 
@@ -475,66 +476,45 @@ gap: 100px;
 .Descrição {
   margin-left: 20PX;
   flex-direction: column;
-
   
 
+
+  }
 
   .IconeReact {
    font-size: 30px;
   }
 
-  
+  .Descrição h1 {
+    
+    font-size: 20px;
+  }
+
+
+  .Descrição p {
+    
+    margin-top: 10px;
+  }
 
   div{
     display: flex;
   }
 
-  
-
-}
-
-
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
 
     div {
       text-align: center;
-    
-    
+    display: flex;
+    flex-direction: column;
 
 
     }
 
-    .Descrição {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    
-
-
-
-
-
-    .Descrição h1 {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-    .Descrição p {
-     font-size: 15px;
-     text-align: center;
-     margin-top: 30px;
-}
-
     
     
     
-}
+  }
 
-
-  
 
 
 `;
@@ -615,6 +595,7 @@ background-color: black;
     flex-direction: column;
     gap: 50px;
     padding: 30px 20px;
+    margin-top: 600px;
   }
 
 
@@ -754,5 +735,3 @@ export const Footer = styled.div`
 
 
  
-
-
