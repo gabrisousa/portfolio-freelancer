@@ -375,6 +375,34 @@ export const Serviço1 = styled.div`
 
 `;
 
+export const CaixaProjeto = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+.Descrição {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px;
+  
+}
+
+.Descrição h1 {
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.Descrição p {
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+`;
+
 
 
 
@@ -394,6 +422,8 @@ padding: 30px;
     align-items: center;
     justify-content: center;
     margin-top: 650px;
+
+    
   }
 `;
 
@@ -414,6 +444,8 @@ export const Projeto1 = styled.div`
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+
+    
     
   }
 
@@ -431,6 +463,8 @@ export const Projeto1 = styled.div`
     opacity: 0;
     transition: opacity 0.3s ease;
     padding: 15px;
+
+    
   }
 
   &:hover .overlay1 {
@@ -453,6 +487,8 @@ export const Projeto1 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    
 
   }
 
@@ -473,47 +509,7 @@ display: flex;
 flex-direction: column;
 gap: 100px;
 
-.Descrição {
-  margin-left: 20PX;
-  flex-direction: column;
-  
 
-
-  }
-
-  .IconeReact {
-   font-size: 30px;
-  }
-
-  .Descrição h1 {
-    
-    font-size: 20px;
-  }
-
-
-  .Descrição p {
-    
-    margin-top: 10px;
-  }
-
-  div{
-    display: flex;
-  }
-
-  @media (max-width: 768px) {
-
-    div {
-      text-align: center;
-    display: flex;
-    flex-direction: column;
-
-
-    }
-
-    
-    
-    
-  }
 
 
 
@@ -572,6 +568,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  
 
   img {
     height: 35px;

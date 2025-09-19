@@ -24,7 +24,7 @@ import {
   Projeto, FotoP1, Projeto1, CaixaVideo, TecnologiasP1, 
   TecnologiasP3, Contatos, Form, Footer, Logo2Img, CaixaContatos, 
   Serviços, ServiçosTitulo, ServiçosDescrição, ListaServiços,
-  Nome, Inicio, Descricao, Foto, FotoImg,  
+  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto 
 } from './Styles'
 
 // Ícones
@@ -190,7 +190,7 @@ function App() {
       whileInView="show" 
       viewport={{ once: true, amount: 0.2 }} 
     >
-      <div>
+      <CaixaProjeto>
         <Projeto1>
           <FotoP1 className='FotoP1' src={FotoProjeto1} alt="Projeto 1"/>
           <div className='overlay1'>
@@ -210,7 +210,7 @@ function App() {
             <img src="https://img.icons8.com/?size=256&id=13664&format=png"/>
           </TecnologiasP1>
         </div>
-      </div>
+      </CaixaProjeto>
     </motion.div>
 
     <motion.div 
@@ -219,7 +219,9 @@ function App() {
       whileInView="show" 
       viewport={{ once: true, amount: 0.2 }} 
     >
-      <div>
+      <CaixaProjeto>
+      
+        
         <Projeto1>
           <FotoP1 className='FotoP1' src={FotoProjeto2} alt="Projeto 2"/>
           <div className='overlay1'>
@@ -238,23 +240,26 @@ function App() {
             em gradiente escuro que contrasta com a área principal de interação. O botão de adicionar tarefas<br />
             tem um estilo chamativo em roxo para dar mais ênfase à ação principal da aplicação.
           </p>
-          <TecnologiasP3>
+          
+        </div>
+        <TecnologiasP3>
             <img src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
           </TecnologiasP3>
-        </div>
-      </div>
+        
+      
+      </CaixaProjeto>
     </motion.div>
 
-    <motion.div 
+    <motion.div
       variants={variants2} 
       initial="hidden" 
       whileInView="show" 
       viewport={{ once: true, amount: 0.2 }} 
     >
-      <div>
+      <CaixaProjeto>
         <Projeto1>
           <FotoP1 className='FotoP1' src={FotoProjeto3} alt="Projeto 3"/>
           <div className='overlay1'>
@@ -277,7 +282,7 @@ function App() {
             <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
           </TecnologiasP3>
         </div>
-      </div>
+      </CaixaProjeto>
     </motion.div>
 
     <motion.div 
@@ -286,7 +291,7 @@ function App() {
       whileInView="show" 
       viewport={{ once: true, amount: 0.2 }} 
     >
-      <div>
+      <CaixaProjeto>
         <Projeto1>
           <FotoP1 className='FotoP1' src={FotoProjeto4} alt="Projeto 4"/>
           <div className='overlay1'>
@@ -309,7 +314,7 @@ function App() {
             <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
           </TecnologiasP3>
         </div>
-      </div>
+      </CaixaProjeto>
     </motion.div>
   </Projeto>
 </Projetos>
