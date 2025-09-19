@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { FaReact} from 'react-icons/fa';
+import { motion } from "framer-motion";
+
 
 
 
@@ -39,12 +41,24 @@ export const Header = styled.div`
   z-index: 1;
   width: 100%;
 
+  .hamburger {  
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
     padding: 10px;
   }
 `;
+
+
+
 
 export const ImagemLogo = styled.div`
   display: flex;
@@ -78,7 +92,7 @@ margin-right: 80px;
 
 
 
-export const Menu = styled.div`
+export const Menu = styled(motion.nav)`
 display: flex;
 justify-content: flex-end;
 align-items: center;
@@ -96,10 +110,16 @@ button {
 
 
 @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: #363535ff;
+    flex-direction: column;
     justify-content: center;
-    padding-right: 0;
-    flex-wrap: wrap;
-    gap: 15px;
+    align-items: center;
+    z-index: 999;
   }
 
 

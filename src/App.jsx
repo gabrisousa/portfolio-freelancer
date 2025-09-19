@@ -24,11 +24,11 @@ import {
   Projeto, FotoP1, Projeto1, CaixaVideo, TecnologiasP1, 
   TecnologiasP3, Contatos, Form, Footer, Logo2Img, CaixaContatos, 
   Serviços, ServiçosTitulo, ServiçosDescrição, ListaServiços,
-  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto 
+  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto
 } from './Styles'
 
 // Ícones
-import { FaReact, FaLinkedin, FaGithub, FaWhatsapp, FaBars } from 'react-icons/fa'
+import { FaReact, FaLinkedin, FaGithub, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa'
 
 // Componentes extras
 import { IconCloud } from '../iconClould'
@@ -44,6 +44,17 @@ const variants = {
 const variants2 = {
   hidden: { opacity: 0, x: -100 },
   show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
+};
+
+const menuVariants = {
+  closed: {
+    x: "100%", // fora da tela (direita)
+    transition: { duration: 0.4, ease: "easeInOut" }
+  },
+  open: {
+    x: 0, // entra
+    transition: { duration: 0.4, ease: "easeInOut" }
+  }
 };
 
 // Ícones nuvem
@@ -94,10 +105,17 @@ function App() {
         <LogoImg src={Logo} alt="Logo" />
         <Nome>Sousa Dev</Nome>
       </ImagemLogo>
+       <div className="hamburger" onClick={toggleMenu}>
+       {open ? <FaTimes size={28} /> : <FaBars size={28} />}
+        </div>
 
 
       {/* Menu */}
-      <Menu open={open}>
+      <Menu
+      variants={menuVariants}
+      initial="closed"
+      animate={open ? "open" : "closed"}
+      >
         <LinkMenu href="#sobre" onClick={() => setOpen(false)}>SOBRE</LinkMenu>
         <LinkMenu href="#projetos" onClick={() => setOpen(false)}>PROJETOS</LinkMenu>
         <LinkMenu href="#servicos" onClick={() => setOpen(false)}>SERVIÇOS</LinkMenu>
