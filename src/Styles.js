@@ -44,7 +44,7 @@ export const Header = styled.div`
   .hamburger {  
     display: none;
     cursor: pointer;
-    margin-right: 10px;
+    z-index: 2;
 
     @media (max-width: 768px) {
       display: block;
@@ -122,7 +122,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 1;
   }
 
 
@@ -640,10 +640,8 @@ height: 100vh;
 gap: 100px;
 border-top: 1px solid #61DBFB;
 background-color: black;
-margin-top: 100px;
 
 @media (max-width: 1024px) {
-    margin-top: -100px;
     flex-direction: column;
     gap: 50px;
     padding: 30px 20px;
