@@ -44,6 +44,8 @@ export const Header = styled.div`
   .hamburger {  
     display: none;
     cursor: pointer;
+    z-index: 999;
+    color: white;
 
     @media (max-width: 768px) {
       display: block;
@@ -269,6 +271,7 @@ export const Sobre = styled.div`
     flex-direction: column;
     height: auto;
     padding: 40px 20px;
+    background-color: #242424;
   }
 
   
@@ -337,6 +340,7 @@ flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 20px;
+    background-color: #242424;
 
   }
 
@@ -407,6 +411,7 @@ gap: 50px;
 @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
+    background-color: #242424;
 
   }
 
@@ -685,6 +690,11 @@ form {
 
 h1 {
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    color: white;
+    margin-bottom: 40px;
+  }
 
   
   
