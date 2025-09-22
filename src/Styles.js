@@ -467,7 +467,7 @@ padding: 30px;
 
  @media (max-width: 768px) {
     padding: 20px;
-    margin-top: 250px;
+    margin-top: 280px;
     gap: 30px;
     display: flex;
     align-items: center;
