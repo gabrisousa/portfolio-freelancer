@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaReact} from 'react-icons/fa';
 import { motion } from "framer-motion";
+import { GiRootTip } from "react-icons/gi";
 
 
 
@@ -271,7 +272,6 @@ export const Sobre = styled.div`
     flex-direction: column;
     height: auto;
     padding: 40px 20px;
-    background-color: #242424;
   }
 
   
@@ -340,7 +340,6 @@ flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background-color: #242424;
 
   }
 
@@ -411,7 +410,6 @@ gap: 50px;
 @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
-    background-color: #242424;
 
   }
 
