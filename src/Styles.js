@@ -124,7 +124,7 @@ button {
 export const MenuMobile = styled(motion.div)`
 display: none;
 @media (max-width: 768px) {
-  display:block
+  display:block;
 
 display: flex;
 justify-content: flex-end;
