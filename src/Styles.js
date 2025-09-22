@@ -47,11 +47,14 @@ export const Header = styled.div`
 
     @media (max-width: 768px) {
       display: block;
+      
     }
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: auto;
     padding: 10px;
   }
