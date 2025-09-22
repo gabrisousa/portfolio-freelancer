@@ -674,6 +674,10 @@ justify-content: center;
 flex-direction: column;
 margin-bottom: -100px;
 
+@media (max-width: 1024px) {
+    padding: 50px;
+  }
+
 
 
 form {
