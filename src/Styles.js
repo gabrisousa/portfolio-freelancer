@@ -402,7 +402,6 @@ export const Serviço1 = styled.div`
 `;
 
 export const CaixaProjeto = styled.div`
-height: 250vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -458,18 +457,22 @@ text-align: center;
 
 
 export const Projetos = styled.div`
+height: 250vh;
 display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
 padding: 30px;
 
+
  @media (max-width: 768px) {
     padding: 20px;
+    margin-top: 250px;
     gap: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
 
     
@@ -557,6 +560,7 @@ margin-top: 150px;
 display: flex;
 flex-direction: column;
 gap: 100px;
+
 
 
 

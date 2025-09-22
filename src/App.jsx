@@ -310,9 +310,9 @@ function App() {
         <Projeto1>
           <FotoP1 className='FotoP1' src={FotoProjeto4} alt="Projeto 4"/>
           <div className='overlay1'>
-            <h3>Irmãos Mario e Luigi</h3>
-            <a href="https://github.com/gabrisousa/Mario-Bros" target="_blank">Github</a>
-            <a href="https://irmaos-mario-e-luigi.netlify.app/" target="_blank">Ver site</a>
+            <h3>Atletas Olímpicos</h3>
+            <a href="https://github.com/gabrisousa/Olimpiadas" target="_blank">Github</a>
+            <a href="https://atletas-olimpicos.netlify.app/" target="_blank">Ver site</a>
           </div>
         </Projeto1>
         <div className='Descrição'>
