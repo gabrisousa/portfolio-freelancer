@@ -11,10 +11,7 @@ import FotoProjeto2 from './assets/Imagem-Projeto2.png'
 import FotoProjeto3 from './assets/Imagem-Projeto3.png'
 import FotoProjeto4 from './assets/Imagem-Projeto4.png'
 import VideoFundo from './assets/videoFundo.mp4'
-// import IconReact from "./assets/react.png";
-// import IconJs from "./assets/javascript.png";
-// import IconHtml from "./assets/html.png";
-// import IconCss from "./assets/css.png";
+
 
 // Styled Components
 import { 
@@ -24,7 +21,8 @@ import {
   Projeto, FotoP1, Projeto1, CaixaVideo, TecnologiasP1, 
   TecnologiasP3, Contatos, Form, Footer, Logo2Img, CaixaContatos, 
   Serviços, ServiçosTitulo, ServiçosDescrição, ListaServiços,
-  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto
+  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto,
+  MenuMobile
 } from './Styles'
 
 // Ícones
@@ -112,6 +110,16 @@ function App() {
 
       {/* Menu */}
       <Menu
+      
+      >
+        <LinkMenu href="#sobre">SOBRE</LinkMenu>
+        <LinkMenu href="#projetos">PROJETOS</LinkMenu>
+        <LinkMenu href="#servicos">SERVIÇOS</LinkMenu>
+        <LinkMenu href="#contato">
+          <button>Contato</button>
+        </LinkMenu>
+
+        <MenuMobile
       variants={menuVariants}
       initial="closed"
       animate={open ? "open" : "closed"}
@@ -122,6 +130,7 @@ function App() {
         <LinkMenu href="#contato" onClick={() => setOpen(false)}>
           <button>Contato</button>
         </LinkMenu>
+        </MenuMobile>
       </Menu>
     </Header>
 

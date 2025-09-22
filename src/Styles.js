@@ -39,13 +39,11 @@ export const Header = styled.div`
   align-items: center;
   background-color: #363535ff;
   border-bottom: solid 1px #61DBFB;
-  z-index: 1;
   width: 100%;
 
   .hamburger {  
     display: none;
     cursor: pointer;
-    z-index: 999;
 
     @media (max-width: 768px) {
       display: block;
@@ -97,7 +95,37 @@ margin-right: 80px;
 
 
 
-export const Menu = styled(motion.nav)`
+export const Menu = styled.div`
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: white;
+width: 100%;
+position: absolute;
+gap: 30px;
+padding-right: 70px;
+
+button {
+  
+  border: none;
+  background-color: #61DBFB;
+}
+
+@media (max-width: 768px) {
+  display: none
+}
+
+
+
+
+
+`;
+
+export const MenuMobile = styled(motion.div)`
+display: none;
+@media (max-width: 768px) {
+  display:block
+
 display: flex;
 justify-content: flex-end;
 align-items: center;
@@ -114,7 +142,7 @@ button {
 }
 
 
-@media (max-width: 768px) {
+
     position: fixed;
     top: 0;
     right: 0;
@@ -126,11 +154,6 @@ button {
     align-items: center;
     z-index: 999;
   }
-
-
-
-
-
 `;
 
 export const LinkMenu = styled.a`
@@ -221,9 +244,7 @@ export const FotoImg = styled.img`
     height: 200px;
   }
 
-  @media (max-width: 480px) {
-    height: 160px;
-  }
+  
 `;
 
 
