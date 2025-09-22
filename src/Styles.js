@@ -46,7 +46,6 @@ export const Header = styled.div`
     display: none;
     cursor: pointer;
     z-index: 999;
-    color: white;
 
     @media (max-width: 768px) {
       display: block;
@@ -689,10 +688,6 @@ form {
 h1 {
   margin-bottom: 20px;
 
-  @media (max-width: 768px) {
-    color: white;
-    margin-bottom: 40px;
-  }
 
   
   
