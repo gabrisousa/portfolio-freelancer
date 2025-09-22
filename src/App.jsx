@@ -111,7 +111,7 @@ function App() {
       <Menu
       variants={menuVariants}
       initial="closed"
-      animate={open ? "open" : "closed"}
+      animate={window.innerWidth > 1024 ? "open" : open ? "open" : "closed"}
       >
         <LinkMenu href="#sobre" onClick={() => setOpen(false)}>SOBRE</LinkMenu>
         <LinkMenu href="#projetos" onClick={() => setOpen(false)}>PROJETOS</LinkMenu>
