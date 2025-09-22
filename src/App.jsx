@@ -21,8 +21,7 @@ import {
   Projeto, FotoP1, Projeto1, CaixaVideo, TecnologiasP1, 
   TecnologiasP3, Contatos, Form, Footer, Logo2Img, CaixaContatos, 
   Serviços, ServiçosTitulo, ServiçosDescrição, ListaServiços,
-  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto,
-  MenuMobile
+  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto
 } from './Styles'
 
 // Ícones
@@ -110,16 +109,6 @@ function App() {
 
       {/* Menu */}
       <Menu
-      
-      >
-        <LinkMenu href="#sobre">SOBRE</LinkMenu>
-        <LinkMenu href="#projetos">PROJETOS</LinkMenu>
-        <LinkMenu href="#servicos">SERVIÇOS</LinkMenu>
-        <LinkMenu href="#contato">
-          <button>Contato</button>
-        </LinkMenu>
-
-        <MenuMobile
       variants={menuVariants}
       initial="closed"
       animate={open ? "open" : "closed"}
@@ -130,7 +119,6 @@ function App() {
         <LinkMenu href="#contato" onClick={() => setOpen(false)}>
           <button>Contato</button>
         </LinkMenu>
-        </MenuMobile>
       </Menu>
     </Header>
 

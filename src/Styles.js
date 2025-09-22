@@ -121,40 +121,7 @@ button {
 
 `;
 
-export const MenuMobile = styled(motion.div)`
-display: none;
-@media (max-width: 768px) {
-  display:block;
 
-display: flex;
-justify-content: flex-end;
-align-items: center;
-color: white;
-width: 100%;
-position: absolute;
-gap: 30px;
-padding-right: 70px;
-
-button {
-  
-  border: none;
-  background-color: #61DBFB;
-}
-
-
-
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 70%;
-    background-color: #363535ff;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-`;
 
 export const LinkMenu = styled.a`
   text-shadow: 2px 1px 2px black;
@@ -360,6 +327,7 @@ flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 20px;
+    margin-top: -100px;
 
   }
 
