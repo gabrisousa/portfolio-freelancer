@@ -329,7 +329,11 @@ margin-top: 100px;
 flex-direction: column;
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  margin-top: -100px;
+  height: 100vh;
+  
+
     
     display: flex;
     align-items: center;
@@ -466,7 +470,7 @@ padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 650px;
+    
 
     
   }
