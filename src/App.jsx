@@ -255,14 +255,16 @@ function App() {
             em gradiente escuro que contrasta com a área principal de interação. O botão de adicionar tarefas<br />
             tem um estilo chamativo em roxo para dar mais ênfase à ação principal da aplicação.
           </p>
-          
-        </div>
-        <TecnologiasP3>
+
+          <TecnologiasP3>
             <img src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
           </TecnologiasP3>
+          
+        </div>
+        
         
       
       </CaixaProjeto>
