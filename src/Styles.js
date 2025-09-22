@@ -399,7 +399,13 @@ export const CaixaProjeto = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-flex-direction: column;
+gap: 50px;
+
+@media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+  }
 
 .Descrição {
   display: flex;
@@ -412,13 +418,24 @@ flex-direction: column;
 }
 
 .Descrição h1 {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 15px;
+
+  @media (max-width: 768px) {
+    
+    margin-top: -20px;
+  }
 }
 
 .Descrição p {
   font-size: 15px;
   margin-top: 15px;
+
+  @media (max-width: 768px) {
+    
+    margin-top: 25px;
+  }
+
 }
 
 `;
@@ -457,6 +474,11 @@ export const Projeto1 = styled.div`
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
   
 
   .FotoP1 {
@@ -579,6 +601,7 @@ export const TecnologiasP3 = styled.div`
 margin-top: 10px;
 gap: 5px;
 
+
 img {
   height: 35px;
 }
@@ -608,6 +631,7 @@ height: 100vh;
 gap: 100px;
 border-top: 1px solid #61DBFB;
 background-color: black;
+margin-top: 100px;
 
 @media (max-width: 1024px) {
     flex-direction: column;
@@ -650,9 +674,7 @@ form {
   flex-direction: column;
   gap: 20px;
 
-  @media (max-width: 480px) {
-      gap: 15px;
-    }
+  
 
   
   
@@ -661,9 +683,7 @@ form {
 h1 {
   margin-bottom: 20px;
 
-  @media (max-width: 480px) {
-      font-size: 1.5rem;
-    }
+  
   
 }
 
@@ -683,10 +703,7 @@ input {
     color: black;
     resize: vertical;
 
-  @media (max-width: 480px) {
-      padding: 8px;
-      width: 100%;
-    }
+  
 }
 
 
@@ -701,10 +718,7 @@ textarea {
     resize: vertical;
     height: 100px;
 
-  @media (max-width: 480px) {
-      padding: 13.5px;
-      width: 100%;
-    }
+  
 
   
   
@@ -722,10 +736,7 @@ button {
     font-weight: bold;
     cursor: pointer;
 
-  @media (max-width: 480px) {
-      padding: 8px;
-      width: 100%;
-    }
+  
 }
 
 
