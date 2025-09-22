@@ -44,6 +44,7 @@ export const Header = styled.div`
   .hamburger {  
     display: none;
     cursor: pointer;
+    margin-right: 10px;
 
     @media (max-width: 768px) {
       display: block;
