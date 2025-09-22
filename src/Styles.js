@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { FaReact} from 'react-icons/fa';
 import { motion } from "framer-motion";
-import { GiRootTip } from "react-icons/gi";
 
 
 
@@ -39,6 +38,7 @@ export const Header = styled.div`
   align-items: center;
   background-color: #363535ff;
   border-bottom: solid 1px #61DBFB;
+  z-index: 1;
   width: 100%;
 
   .hamburger {  
@@ -47,7 +47,6 @@ export const Header = styled.div`
 
     @media (max-width: 768px) {
       display: block;
-      
     }
   }
 
@@ -95,7 +94,7 @@ margin-right: 80px;
 
 
 
-export const Menu = styled.div`
+export const Menu = styled(motion.nav)`
 display: flex;
 justify-content: flex-end;
 align-items: center;
@@ -111,17 +110,25 @@ button {
   background-color: #61DBFB;
 }
 
+
 @media (max-width: 768px) {
-  display: none
-}
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: #363535ff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
 
 
 
 
 
 `;
-
-
 
 export const LinkMenu = styled.a`
   text-shadow: 2px 1px 2px black;
@@ -211,7 +218,9 @@ export const FotoImg = styled.img`
     height: 200px;
   }
 
-  
+  @media (max-width: 480px) {
+    height: 160px;
+  }
 `;
 
 
@@ -327,7 +336,6 @@ flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 20px;
-    margin-top: -100px;
 
   }
 
@@ -394,12 +402,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 50px;
+text-align: center;
 
 @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-
-  }
+  display: flex;
+  flex-direction:column;
+}
 
 .Descrição {
   display: flex;
@@ -408,6 +416,12 @@ gap: 50px;
   flex-direction: column;
   text-align: center;
   font-size: 10px;
+
+  
+    
+
+    
+  
   
 }
 
@@ -416,9 +430,10 @@ gap: 50px;
   margin-top: 15px;
 
   @media (max-width: 768px) {
-    
-    margin-top: -20px;
-  }
+   
+   margin-top: -15px;
+
+}
 }
 
 .Descrição p {
@@ -426,10 +441,9 @@ gap: 50px;
   margin-top: 15px;
 
   @media (max-width: 768px) {
-    
-    margin-top: 25px;
+   font-size: 20px;
+   margin-top: 25px;
   }
-
 }
 
 `;
@@ -468,11 +482,6 @@ export const Projeto1 = styled.div`
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  
   
 
   .FotoP1 {
@@ -595,7 +604,6 @@ export const TecnologiasP3 = styled.div`
 margin-top: 10px;
 gap: 5px;
 
-
 img {
   height: 35px;
 }
@@ -625,7 +633,6 @@ height: 100vh;
 gap: 100px;
 border-top: 1px solid #61DBFB;
 background-color: black;
-margin-top: 100px;
 
 @media (max-width: 1024px) {
     flex-direction: column;
@@ -668,7 +675,9 @@ form {
   flex-direction: column;
   gap: 20px;
 
-  
+  @media (max-width: 480px) {
+      gap: 15px;
+    }
 
   
   
@@ -677,8 +686,9 @@ form {
 h1 {
   margin-bottom: 20px;
 
-
-  
+  @media (max-width: 480px) {
+      font-size: 1.5rem;
+    }
   
 }
 
@@ -698,7 +708,10 @@ input {
     color: black;
     resize: vertical;
 
-  
+  @media (max-width: 480px) {
+      padding: 8px;
+      width: 100%;
+    }
 }
 
 
@@ -713,7 +726,10 @@ textarea {
     resize: vertical;
     height: 100px;
 
-  
+  @media (max-width: 480px) {
+      padding: 13.5px;
+      width: 100%;
+    }
 
   
   
@@ -731,7 +747,10 @@ button {
     font-weight: bold;
     cursor: pointer;
 
-  
+  @media (max-width: 480px) {
+      padding: 8px;
+      width: 100%;
+    }
 }
 
 
