@@ -639,8 +639,10 @@ height: 100vh;
 gap: 100px;
 border-top: 1px solid #61DBFB;
 background-color: black;
+margin-top: 100px;
 
 @media (max-width: 1024px) {
+    margin-top: -100px;
     flex-direction: column;
     gap: 50px;
     padding: 30px 20px;
