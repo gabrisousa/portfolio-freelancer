@@ -215,7 +215,7 @@ export const FotoImg = styled.img`
   box-shadow: 4px 4px 4px 4px black;
 
   @media (max-width: 768px) {
-    height: 400px;
+    height: 300px;
   }
 
   
