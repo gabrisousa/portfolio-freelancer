@@ -673,7 +673,7 @@ flex-direction: column;
 margin-bottom: -100px;
 
 @media (max-width: 1024px) {
-    padding: 50px;
+    padding: 20px;
   }
 
 
@@ -709,7 +709,7 @@ input {
   border: 1px solid #61DBFB;
     border-radius: 5px;
     padding: 10px;
-    width: 400px;
+    width: 300px;
     background-color: white;
     color: black;
     resize: vertical;
@@ -723,7 +723,7 @@ textarea {
   border: 1px solid #61DBFB;
     border-radius: 5px;
     padding: 10px;
-    width: 400px;
+    width: 300px;
     background-color: white;
     color: black;
     resize: vertical;
@@ -742,7 +742,7 @@ button {
   
   border-radius: 5px;
     padding: 10px;
-    width: 400px;
+    width: 300px;
     background-color: #61DBFB;
     font-weight: bold;
     cursor: pointer;
