@@ -10,6 +10,7 @@ import FotoProjeto1 from './assets/Imagem-Projeto1.png'
 import FotoProjeto2 from './assets/Imagem-Projeto2.png'
 import FotoProjeto3 from './assets/Imagem-Projeto3.png'
 import FotoProjeto4 from './assets/Imagem-Projeto4.png'
+import FotoProjeto5 from './assets/Imagem-Projeto5.png'
 import VideoFundo from './assets/videoFundo.mp4'
 
 
@@ -199,6 +200,38 @@ function App() {
         <Projetos id='projetos'>
   <h1 className='Titulo-Projetos'>Projetos</h1>
   <Projeto>
+    <motion.div 
+      variants={variants2} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <CaixaProjeto>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto5} alt="Projeto 5"/>
+          <div className='overlay1'>
+            <h3>BK TECK EQUIPAMENTOS</h3>
+            <a href="" target="_blank">Ver site</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>BK TECK EQUIPAMENTOS - Soluções Inovadoras<br /> para sua Empresa!</h1>
+          <p>
+            A BK Tech Equipamentos é uma empresa especializada em soluções<br />
+             completas de segurança, proteção e equipamentos industriais. Com foco em<br />
+              qualidade, tecnologia e confiabilidade, a BK Tech se dedica a fornecer<br />
+               produtos e serviços que ajudam empresas a otimizar processos, garantir<br />
+                a segurança dos colaboradores e manter ambientes de trabalho conformes<br />
+                 com as normas técnicas vigentes.
+          </p>
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
+        </div>
+      </CaixaProjeto>
+    </motion.div>
     <motion.div 
       variants={variants2} 
       initial="hidden" 

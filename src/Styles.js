@@ -456,12 +456,14 @@ text-align: center;
 
 
 export const Projetos = styled.div`
-height: 250vh;
+height: 320vh;
 display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
-padding: 30px;
+padding: 50px;
+
+
 
 
  @media (max-width: 768px) {
