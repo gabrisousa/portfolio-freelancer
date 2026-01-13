@@ -456,12 +456,38 @@ text-align: center;
 
 
 export const Projetos = styled.div`
-height: 320vh;
+
 display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
-padding: 50px;
+padding: 150px 150px 100px 150px;
+
+
+
+
+ @media (max-width: 768px) {
+    padding: 20px;
+    margin-top: 280px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+    
+  }
+`;
+
+
+export const Projetos2 = styled.div`
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding: 150px;
 
 
 

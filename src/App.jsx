@@ -11,6 +11,12 @@ import FotoProjeto2 from './assets/Imagem-Projeto2.png'
 import FotoProjeto3 from './assets/Imagem-Projeto3.png'
 import FotoProjeto4 from './assets/Imagem-Projeto4.png'
 import FotoProjeto5 from './assets/Imagem-Projeto5.png'
+import FotoProjeto6 from './assets/Imagem-Projeto6.png'
+import FotoProjeto7 from './assets/Imagem-Projeto7.png'
+import FotoProjeto8 from './assets/Imagem-Projeto8.png'
+import FotoProjeto9 from './assets/Imagem-Projeto9.png'
+import FotoProjeto10 from './assets/Imagem-Projeto10.png'
+import FotoProjeto11 from './assets/Imagem-Projeto11.png'
 import VideoFundo from './assets/videoFundo.mp4'
 
 
@@ -22,7 +28,8 @@ import {
   Projeto, FotoP1, Projeto1, CaixaVideo, TecnologiasP1, 
   TecnologiasP3, Contatos, Form, Footer, Logo2Img, CaixaContatos, 
   Serviços, ServiçosTitulo, ServiçosDescrição, ListaServiços,
-  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto
+  Nome, Inicio, Descricao, Foto, FotoImg, CaixaProjeto,
+  Projetos2
 } from './Styles'
 
 // Ícones
@@ -198,7 +205,7 @@ function App() {
         </motion.div>
 
         <Projetos id='projetos'>
-  <h1 className='Titulo-Projetos'>Projetos</h1>
+  <h1 className='Titulo-Projetos'>Projetos Profissionais</h1>
   <Projeto>
     <motion.div 
       variants={variants2} 
@@ -233,7 +240,7 @@ function App() {
       </CaixaProjeto>
     </motion.div>
     <motion.div 
-      variants={variants2} 
+      variants={variants} 
       initial="hidden" 
       whileInView="show" 
       viewport={{ once: true, amount: 0.2 }} 
@@ -261,8 +268,87 @@ function App() {
       </CaixaProjeto>
     </motion.div>
 
+    
+  </Projeto>
+</Projetos>
+
+
+
+
+
+<Projetos2 id='projetos'>
+  <h1 className='Titulo-Projetos'>Projetos Pessoais</h1>
+  <Projeto>
+    <motion.div 
+      variants={variants2} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <CaixaProjeto>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto6} alt="Projeto 5"/>
+          <div className='overlay1'>
+            <h3>Resident Evil 4</h3>
+            <a href="https://resident-evil-4-sousadev.netlify.app/" target="_blank">Ver site</a>
+            <a href="https://github.com/gabrisousa/Resident-Evil-4" target="_blank">Github</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>Resident Evil 4</h1>
+          <p>
+            Projeto front-end inspirado no jogo Resident Evil 4, desenvolvido com foco<br />
+            em identidade visual, imersão temática e experiência do usuário. O objetivo<br />
+            foi recriar uma interface impactante, utilizando imagens, tipografia e cores<br />
+            para transmitir a atmosfera sombria e intensa do jogo. Este projeto demonstra<br />
+            criatividade, atenção aos detalhes visuais e capacidade de transformar referências<br />
+            do universo dos games em uma experiência web responsiva e bem estruturada, aplicando<br />
+            boas práticas de front-end.
+          </p>
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
+        </div>
+      </CaixaProjeto>
+    </motion.div>
     <motion.div 
       variants={variants} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <CaixaProjeto>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto7} alt="Projeto 1"/>
+          <div className='overlay1'>
+            <h3>Star Bucks</h3>
+            <a href="https://star-bucks-sousa-dev.netlify.app/" target="_blank">Ver site</a>
+            <a href="https://github.com/gabrisousa/StarBucks" target="_blank">Github</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>Star Bucks</h1>
+          <p>
+            Projeto front-end inspirado na identidade visual da Starbucks, desenvolvido com<br /> 
+            foco em layout moderno, responsividade e experiência do usuário. O objetivo foi<br />
+            recriar uma interface limpa e atrativa, destacando produtos, cores da marca e organização<br />
+            visual, além de praticar boas práticas de HTML, CSS e JavaScript.Este projeto demonstra<br />
+            atenção aos detalhes, fidelidade ao design e capacidade de transformar referências reais<br />
+            em interfaces funcionais e bem estruturadas.
+          </p>
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
+        </div>
+      </CaixaProjeto>
+    </motion.div>
+
+    <motion.div 
+      variants={variants2} 
       initial="hidden" 
       whileInView="show" 
       viewport={{ once: true, amount: 0.2 }} 
@@ -271,26 +357,25 @@ function App() {
       
         
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto2} alt="Projeto 2"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto8} alt="Projeto 2"/>
           <div className='overlay1'>
-            <h3>Lista de Tarefas</h3>
-            <a href="https://github.com/gabrisousa/Lista-de-tarefas" target="_blank">Github</a>
+            <h3>Spotify</h3>
             <a href="https://lista-de-tarefas-sousadev.netlify.app/" target="_blank">Ver site</a>
+            <a href="https://github.com/gabrisousa/spotify" target="_blank">Github</a>
           </div>
         </Projeto1>
         <div className='Descrição'>
-          <h1>Lista de Tarefas</h1>
+          <h1>Spotify</h1>
           <p>
-            Este projeto é uma aplicação simples e funcional de lista de tarefas, desenvolvida<br />
-            com foco em praticar conceitos fundamentais de React. O usuário pode<br />
-            adicionar novas tarefas através do campo de input e gerenciá-las de forma dinâmica.<br />
-            O design é minimalista, com destaque para a usabilidade e clareza, utilizando um fundo<br />
-            em gradiente escuro que contrasta com a área principal de interação. O botão de adicionar tarefas<br />
-            tem um estilo chamativo em roxo para dar mais ênfase à ação principal da aplicação.
+            Projeto front-end inspirado no design e na experiência do Spotify, com foco em layout<br />
+            moderno, organização visual e experiência do usuário. O objetivo foi recriar uma interface<br />
+            que remete ao estilo da plataforma, trabalhando com tipografia, cores, navegação<br /> 
+            e responsividade para diferentes tamanhos de tela. Este projeto demonstra domínio de HTML,<br />
+            CSS e JavaScript, além da capacidade de transformar interfaces complexas em páginas<br />
+            acessíveis e esteticamente agradáveis,aplicando boas práticas de desenvolvimento front-end.
           </p>
 
           <TecnologiasP3>
-            <img src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
             <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
@@ -304,7 +389,7 @@ function App() {
     </motion.div>
 
     <motion.div
-      variants={variants2} 
+      variants={variants} 
       initial="hidden" 
       whileInView="show" 
       viewport={{ once: true, amount: 0.2 }} 
@@ -314,8 +399,8 @@ function App() {
           <FotoP1 className='FotoP1' src={FotoProjeto3} alt="Projeto 3"/>
           <div className='overlay1'>
             <h3>Irmãos Mario e Luigi</h3>
-            <a href="https://github.com/gabrisousa/Mario-Bros" target="_blank">Github</a>
             <a href="https://irmaos-mario-e-luigi.netlify.app/" target="_blank">Ver site</a>
+            <a href="https://github.com/gabrisousa/Mario-Bros" target="_blank">Github</a>
           </div>
         </Projeto1>
         <div className='Descrição'>
@@ -336,7 +421,7 @@ function App() {
     </motion.div>
 
     <motion.div 
-      variants={variants} 
+      variants={variants2} 
       initial="hidden" 
       whileInView="show" 
       viewport={{ once: true, amount: 0.2 }} 
@@ -346,8 +431,8 @@ function App() {
           <FotoP1 className='FotoP1' src={FotoProjeto4} alt="Projeto 4"/>
           <div className='overlay1'>
             <h3>Atletas Olímpicos</h3>
-            <a href="https://github.com/gabrisousa/Olimpiadas" target="_blank">Github</a>
             <a href="https://atletas-olimpicos.netlify.app/" target="_blank">Ver site</a>
+            <a href="https://github.com/gabrisousa/Olimpiadas" target="_blank">Github</a>
           </div>
         </Projeto1>
         <div className='Descrição'>
@@ -366,8 +451,106 @@ function App() {
         </div>
       </CaixaProjeto>
     </motion.div>
+
+
+    <motion.div 
+      variants={variants} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <CaixaProjeto>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto9} alt="Projeto 9"/>
+          <div className='overlay1'>
+            <h3>Weather Forecast App</h3>
+            <a href="https://previsaodotemposousadev.netlify.app/" target="_blank">Ver site</a>
+            <a href="https://github.com/gabrisousa/previsao-do-tempo" target="_blank">Github</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>Weather Forecast App</h1>
+          <p>
+            Projeto front-end de previsão do tempo, desenvolvido com foco em consumo de API,<br />
+            exibição dinâmica de dados e experiência do usuário. O objetivo foi criar uma interface<br />
+            funcional que apresenta informações climáticas de forma clara e responsiva, trabalhando<br />
+            com requisições à API, estrutura de dados e atualização em tempo real.
+          </p>
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
+        </div>
+      </CaixaProjeto>
+    </motion.div>
+
+
+    <motion.div 
+      variants={variants2} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <CaixaProjeto>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto10} alt="Projeto 10"/>
+          <div className='overlay1'>
+            <h3>Five Nights At Freddy's</h3>
+            <a href="https://welcometofivenightsatfreddys.netlify.app/" target="_blank">Ver site</a>
+            <a href="https://github.com/gabrisousa/Five-Nights-At-Freddy-s" target="_blank">Github</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>Five Nights At Freddy's</h1>
+          <p>
+            Projeto front-end inspirado no universo de Five Nights at Freddy’s, desenvolvido com foco<br />
+            em identidade visual, interatividade e experiência do usuário. O objetivo foi recriar uma<br />
+            interface temática que remete à atmosfera marcante do jogo, trabalhando com tipografia,<br />
+            imagens,efeitos visuais e responsividade.
+          </p>
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
+        </div>
+      </CaixaProjeto>
+    </motion.div>
+
+    <motion.div 
+      variants={variants} 
+      initial="hidden" 
+      whileInView="show" 
+      viewport={{ once: true, amount: 0.2 }} 
+    >
+      <CaixaProjeto>
+        <Projeto1>
+          <FotoP1 className='FotoP1' src={FotoProjeto11} alt="Projeto 11"/>
+          <div className='overlay1'>
+            <h3>PokeDev</h3>
+            <a href="https://poke-devs.netlify.app/" target="_blank">Ver site</a>
+            <a href="https://github.com/gabrisousa/projeto-pokedevs" target="_blank">Github</a>
+          </div>
+        </Projeto1>
+        <div className='Descrição'>
+          <h1>PokeDev</h1>
+          <p>
+            PokéDevs é um projeto front-end inspirado no universo Pokémon, desenvolvido com foco em<br />
+            consumo de APIs, interface interativa e experiência do usuário. O objetivo foi criar uma<br />
+            aplicação que apresenta dados reais de Pokémon de forma visualmente atrativa, utilizando<br />
+            requisições à API, organização de cards e responsividade para diferentes telas.
+          </p>
+          <TecnologiasP3>
+            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
+            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+          </TecnologiasP3>
+        </div>
+      </CaixaProjeto>
+    </motion.div>
   </Projeto>
-</Projetos>
+</Projetos2>
 
 
         {/* CONTATO */}
