@@ -466,6 +466,9 @@ padding: 150px 150px 100px 150px;
 
 
 
+
+
+
  @media (max-width: 768px) {
     padding: 20px;
     margin-top: 280px;
@@ -473,6 +476,7 @@ padding: 150px 150px 100px 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     
     
 
@@ -499,6 +503,7 @@ padding: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     
     
 
