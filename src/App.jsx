@@ -205,7 +205,7 @@ function App() {
         </motion.div>
 
         <Projetos id='projetos'>
-  <h1 className='Titulo-Projetos'>Projetos Profissionais</h1>
+  <h1 className='Titulo-Projetos'>Projetos P</h1>
   <Projeto>
     <motion.div 
       variants={variants2} 
@@ -276,7 +276,7 @@ function App() {
 
 
 
-<Projetos2 id='projetos'>
+{/* <Projetos2 id='projetos'>
   <h1 className='Titulo-Projetos'>Projetos Pessoais</h1>
   <Projeto>
     <motion.div 
@@ -550,7 +550,7 @@ function App() {
       </CaixaProjeto>
     </motion.div>
   </Projeto>
-</Projetos2>
+</Projetos2> */}
 
 
         {/* CONTATO */}
