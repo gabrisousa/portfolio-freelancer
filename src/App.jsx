@@ -222,7 +222,7 @@ function App() {
           </div>
         </Projeto1>
         <div className='Descrição'>
-          <h1>BK TECK EQUIPAMENTOS - Soluções Inovadoras<br /> para sua Empresa!</h1>
+          <h1>BK TECK EQUIPAMENTOS - Soluções Inovadoras<br />para sua Empresa!</h1>
           <p>
             A BK Tech Equipamentos é uma empresa especializada em soluções<br />
              completas de segurança, proteção e equipamentos industriais. Com foco em<br />
