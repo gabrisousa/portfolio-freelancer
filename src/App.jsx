@@ -217,7 +217,7 @@ function App() {
           <FotoP1 className='FotoP1' src={FotoProjeto5} alt="Projeto 5"/>
           <div className='overlay1'>
             <h3>BK TECK EQUIPAMENTOS</h3>
-            <a href="" target="_blank">Ver site</a>
+            <a href="" target="_blank">Ver sit</a>
           </div>
         </Projeto1>
         <div className='Descrição'>
