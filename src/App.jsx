@@ -7,6 +7,7 @@ import Logo from './assets/Logo.png'
 import Logo2 from './assets/Logo2.png'
 import FotoPerfil from './assets/foto.png'
 import FotoProjeto1 from './assets/Imagem-Projeto1.png'
+import FotoProjeto2 from './assets/Imagem-Projeto2.png'
 import FotoProjeto3 from './assets/Imagem-Projeto3.png'
 import FotoProjeto4 from './assets/Imagem-Projeto4.png'
 import FotoProjeto5 from './assets/Imagem-Projeto5.png'
@@ -15,7 +16,6 @@ import FotoProjeto7 from './assets/Imagem-Projeto7.png'
 import FotoProjeto8 from './assets/Imagem-Projeto8.png'
 import FotoProjeto9 from './assets/Imagem-Projeto9.png'
 import FotoProjeto10 from './assets/Imagem-Projeto10.png'
-import FotoProjeto11 from './assets/Imagem-Projeto11.png'
 import VideoFundo from './assets/videoFundo.mp4'
 
 
@@ -214,7 +214,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto5} alt="Projeto 5"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto1} alt="Projeto 1"/>
           <div className='overlay1'>
             <h3>BK TECK EQUIPAMENTOS</h3>
             <a href="" target="_blank">Ver site</a>
@@ -246,7 +246,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto1} alt="Projeto 1"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto2} alt="Projeto 2"/>
           <div className='overlay1'>
             <h3>Max Sales</h3>
             <a href="https://salesmax.com.br/" target="_blank">Ver site</a>
@@ -286,7 +286,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto6} alt="Projeto 5"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto3} alt="Projeto 3"/>
           <div className='overlay1'>
             <h3>Resident Evil 4</h3>
             <a href="https://resident-evil-4-sousadev.netlify.app/" target="_blank">Ver site</a>
@@ -320,7 +320,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto7} alt="Projeto 1"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto4} alt="Projeto 4"/>
           <div className='overlay1'>
             <h3>Star Bucks</h3>
             <a href="https://star-bucks-sousa-dev.netlify.app/" target="_blank">Ver site</a>
@@ -356,7 +356,7 @@ function App() {
       
         
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto8} alt="Projeto 2"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto5} alt="Projeto 5"/>
           <div className='overlay1'>
             <h3>Spotify</h3>
             <a href="https://lista-de-tarefas-sousadev.netlify.app/" target="_blank">Ver site</a>
@@ -395,7 +395,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto3} alt="Projeto 3"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto6} alt="Projeto 6"/>
           <div className='overlay1'>
             <h3>Irmãos Mario e Luigi</h3>
             <a href="https://irmaos-mario-e-luigi.netlify.app/" target="_blank">Ver site</a>
@@ -427,7 +427,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto4} alt="Projeto 4"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto7} alt="Projeto 7"/>
           <div className='overlay1'>
             <h3>Atletas Olímpicos</h3>
             <a href="https://atletas-olimpicos.netlify.app/" target="_blank">Ver site</a>
@@ -460,7 +460,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto9} alt="Projeto 9"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto8} alt="Projeto 9"/>
           <div className='overlay1'>
             <h3>Weather Forecast App</h3>
             <a href="https://previsaodotemposousadev.netlify.app/" target="_blank">Ver site</a>
@@ -493,7 +493,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto10} alt="Projeto 10"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto9} alt="Projeto 9"/>
           <div className='overlay1'>
             <h3>Five Nights At Freddy's</h3>
             <a href="https://welcometofivenightsatfreddys.netlify.app/" target="_blank">Ver site</a>
@@ -525,7 +525,7 @@ function App() {
     >
       <CaixaProjeto>
         <Projeto1>
-          <FotoP1 className='FotoP1' src={FotoProjeto11} alt="Projeto 11"/>
+          <FotoP1 className='FotoP1' src={FotoProjeto10} alt="Projeto 11"/>
           <div className='overlay1'>
             <h3>PokeDev</h3>
             <a href="https://poke-devs.netlify.app/" target="_blank">Ver site</a>
