@@ -678,7 +678,7 @@ background-color: black;
     flex-direction: column;
     gap: 50px;
     padding: 30px 20px;
-    margin-top: 600px;
+    margin-top: 180px;
   }
 
 
